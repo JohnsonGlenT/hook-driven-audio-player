@@ -1,0 +1,25 @@
+#+title: Hook Driven Audio-Player
+
+* The Goal
+A simple audio play that runs as a server that allows for signals to be sent to audio player for fine interfacing control
+
+* TODO:
+** Client/Server
+- Create a client that can send a signal to a specific server for interfacing
+- Create a server that can handle receiving signals and respond back the appropriate information
+** Audio
+*** Decode
+- Be able to decode most audio files
+*** Playback
+**** Pause
+- Be able to stop the playing of the audio file
+**** Play
+- Be able to start playing the audio file from any timestamp
+**** Playback speed
+- Be able to set the playback speed of the file
+*** Seek
+- Be able to go to a specific timestamp
+**** Rewind
+- Be able to go back a set amount in the timestamp
+**** Forwards
+- Be able to go forwards a set amount in the timestamp
