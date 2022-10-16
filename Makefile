@@ -4,11 +4,11 @@
 # @file
 # @version 0.1
 
-libs = -lavcodec-ffmpeg -lavformat-ffmpeg -lavutil -lswresample
 CC = gcc
+LIBS= -lavcodec -lavformat -lavdevice -lavutil -lswresample
 
 all: src/main.c
-	$(CC) src/main.c -o audio-player $(LIBS)
+	$(CC) -Wall -g src/main.c -o audio-player $(LIBS)
 
 
 # end
